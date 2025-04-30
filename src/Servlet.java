@@ -8,6 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 public class Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        A.foo(request.getParameter("source"));
+        A.foo(request.getParameter("source")); // pass user-controlled-path
     }
 }
